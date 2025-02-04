@@ -1,3 +1,15 @@
 body {
-    background-color: rgb(204, 235, 179);
+    background-color: #dedb91;
+    text-align: center;
+    color: #bf8960;
+    font-family: Verdana;
+}
+
+a {
+    color: cornsilk;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(248, 233, 171);
 }

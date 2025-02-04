@@ -13,3 +13,9 @@ a {
 a:hover {
     color: rgb(248, 233, 171);
 }
+
+main p {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}

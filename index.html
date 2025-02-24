@@ -119,6 +119,9 @@
             h2 {
                 color: rgb(194, 194, 255);
             }
+            .h2-story {
+                color: rgb(231, 156, 189);
+            }
             .header {
                 display: flex;
                 justify-content: space-between;
@@ -154,6 +157,25 @@
                 font-size: 20px;
                 font-family: Georgia;
                 color: #464545;
+            }
+            input[type=text], input[type=email], select, textarea {
+                width: 100%;
+                padding: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            input[type=submit]{
+                color: white;
+                border: none;
+                padding: 12px 20px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover{
+                background-color: lavender;
             }
             .section1 {
                 display: flex;
@@ -194,18 +216,25 @@
                 <h1>About Me</h1>
                 <div class="inner-2">
                     <div class="inner-box">
-                        <div class="inner-1-text"><h2>My Story</h2>
-                        <p>I am deeply passionate about the world.</p>
-                        <p>When I was nineteen, I bought a ticket that took me to China.
+                        <div class="inner-1-text"><h2 class="h2-story">My Story</h2>
+                        <p>I am deeply passionate about connecting the world.</p>
+                        <p>When I was nineteen, I bought a plane ticket that took me to China.
                             I had never been on an airplane before. This experience completely
-                            transformed my life and the world in which I live. Culture, connection,
-                            and the human experience are of utmost importance to me. My goal is to
-                            contribute to the connection of the world through my skills that I have
-                            developed in both Computer Science and International Business, fostering
-                            connectivity and creation. 
+                            transformed my life and reshaped my perspective on the world. Since then,
+                            I have been dedicated to understanding cultures, building global connections,
+                            and finding ways to foster meaningful impact in the world.</p>
+                        <p>My academic journey reflects this commitment. After studying International
+                            Business, I transitioned into Computer Science, a field that allows me to combine
+                            my interests in technology and global collaboration. I appreciate the power of 
+                            computers to unlock solutions to complex problems.
                         </p>
-                        <p>
-                        </p></div>
+                    <p>Now, I aim to thrive in the intersection of Computer Science, International Business,
+                        and data analysis, where I can leverage data to drive informed decisions and create
+                        connections across borders.
+                    </p>
+                <p>Through my work, I strive to bridge the gap between technology and global business, fostering
+                    innovation for a more connected world.
+                </p></div>
                     </div></div>
             </section>
             <section id="projects" class="section3">
@@ -213,34 +242,27 @@
                 <div class="inner-3">
                     <div class="inner-box">
                         <div class="inner-1-text"><h2>My Work</h2>
-                        <p>My name is Mila.</p>
-                        <p>I was born and raised just west of Charlotte. I live with my fiance 
-                            and our four cats. My biggest passion in life is to travel. I have 
-                            been to twelve different countries on trips that I planned myself. 
-                            My favorite place is Japan, and I also study Japanese. In my free time,
-                            I enjoy gardening and playing video games.
-                        </p>
-                        <p>This website is here for you to learn more about me and what I 
-                            have to offer. Thank you for joining me in my digital horizon.
-                        </p></div>
+                        <p>Click here to see my projects on GitHub!</div>
                     </div></div>
             </section>
             <section id="contact" class="section4">
                 <h1>Contact Me</h1>
                 <div class="inner-4">
                     <div class="inner-box">
-                        <div class="photo"><img src="flowers.jpg"></div>
-                        <div class="inner-1-text"><h2>Hello and Welcome!</h2>
-                        <p>My name is Mila.</p>
-                        <p>I am a student at the University of North Carolina at
-                        Charlotte. With a diverse skillset and a background that spans
-                        International Business to Computer Science, I am eager to 
-                        contribute to the world around me. I am passionate about community,
-                        culture, and the human experience. </p>
-                        <p>This website is here for you to learn more about me and what I 
-                            have to offer. Thank you for joining me in my digital horizon.
-                        </p></div>
-                    </div></div>
+                        <form action="action_page.php">
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                            <label for="subject">Subject: </label>
+                            <textarea id="subject" name="subject" placeholder="Enter your message" style="height: 200px"></textarea>
+
+                            <input type="submit" value="submit">
+                        </form>
+                        </div>
+                        </div>
             </section>
             <script>
 

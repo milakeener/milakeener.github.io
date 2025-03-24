@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>My Hobby Site</title>
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fefae0;
+            color: #815e48;
+        }
+
+        nav {
+            background: #4a6c47; 
+            color: #fefae0;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fefae0;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #8a9c4b;
+            color: white;
+        }
+
+        nav .divider {
+            color: #fefae0;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 1000px;
+            display: none;
+            background-color: #e9edc9;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #home {
+            display: block;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-family: Geneva;
+            font-size: 30px;
+            color: #815e48;
+        }
+
+        img {
+            display: block;
+            max-width: 80%;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p, li {
+            text-align: center;
+            font-size: 20px;
+            color: #3a3a3a;
+            line-height: 1.6;
+            padding: 0 20px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        figure {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        figure figcaption {
+            font-size: 14px;
+            color: #4a6c47;
+            margin-top: 10px;
+        }
+
+        figure i {
+            font-size: 12px;
+            color: #a3a3a3;
+        }
+
+        a {
+            text-decoration: none;
+            color: green;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        footer {
+            background-color: #4a6c47;
+            color: #fefae0;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fefae0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function showSection(id) {
+            document.querySelectorAll("section").forEach((section) => section.style.display = "none");
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('about')">About</a>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('when')">Gardening by Season</a>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('where')">Gardening by Region</a>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('how')">Gardening for Beginners</a>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('why')">Why Gardening?</a>
+        <span class="divider">❃</span>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Mila's World of Gardening</h1>
+            <figure>
+            <img src="images/home.jpg" alt="Tropical plants in a garden">
+            <figcaption>Tropical plants in an indoor garden in Asheville, NC.</figcaption>
+            </figure>
+            <p>Hello and welcome! My name is Mila. I'm an amateur gardener living in the woods in North Carolina. This website is here as a place for me to share my experience with plants
+                and to encourage others who want to start their own gardens!
+            </p>
+        </section>
+
+        <section id="about">
+            <h1>About Me</h1>
+            <figure>
+            <img src="images/about.jpg" alt="Hydrangeas in Japan">
+            <figcaption>Beautiful hydrangea flowers in a temple in Kamakura, Japan.</figcaption>
+            </figure>
+            <p>My name is Mila. I'm a student at the University of North Carolina at Charlotte, pursuing a degree in Computer Science.
+                I grew up in rural North Carolina on a hay field, and my earliest memory of gardening is when I used to grow vegetables with my mother.
+                Now, I find joy in stepping away from technology for a little while in order to care for plants.
+                Gardening helps me to connect more with nature and to be present in the world around me, and it's a passion that I am able to take with me 
+                everywhere that I go. 
+            </p>
+        </section>
+
+        <section id="when">
+            <h2>Gardening by Season</h2>
+            <p>Timing is crucial when it comes to gardening. Different plants thrive during different seasons. Spring is a great time for blooming flowers, while summer is ideal for warm-weather crops.</p>
+            <p>That being said, there is always something that you can be growing, even if it's from the comfort of inside your home. Late winter is a perfect time to start growing vegetables from seeds, as long 
+                as you don't take them outside until it's warm enough.
+            </p>
+            <p>Autumn is a great time for goldenrod, asters, chrysanthemums, and Japanese spider lilies.</p>
+            <figure>
+                <img src="images/season.jpg" alt="Autumn leaves">
+                <figcaption>Beautiful autumn leaves illuminated by the sun in Copenhagen, Denmark.</figcaption>
+            </figure>
+        </section>
+
+        <section id="where">
+            <h2>Gardening by Region</h2>
+            <p>The best places to garden depend on your climate zone. Coastal areas are great for salt-tolerant plants, while cooler regions are better for hardy vegetables.</p>
+            <p>The USDA has a helpful <a href="https://planthardiness.ars.usda.gov/">Plant Hardiness Zone Map</a> which can help you to identify what plants you should grow and when!</p>
+            <figure>
+                <img src="images/location.jpg" alt="Garden in Indonesia">
+                <figcaption>A lush, beautiful garden in Denpasar Utara, Indonesia.</figcaption>
+            </figure>
+        </section>
+
+        <section id="how">
+            <h2>How to Start Your Garden</h2>
+            <p>Starting a garden is easier than you think! Here’s a simple guide:</p>
+            <ul>
+                <li>First and foremost, decide where you want your plants to go. Will they be indoors or outdoors?
+                    Are they going to grow in sunlight or in shade? Will they be in dark brown soil, red clay, or sand? 
+                </li>
+                <li>Next, it's time to research different plants you might be interested in. Find out which ones are compatible 
+                    with your answers to the previous questions.
+                </li>
+                <li>Finally, prepare your soil and plant away!</li>
+            </ul>
+            <figure>
+                <img src="images/how.jpg" alt="Garden alongside a home in Romania">
+                <figcaption>A floral garden in Bucharest, Romania.</figcaption>
+            </figure>
+        </section>
+
+        <section id="why">
+            <h2>Why Gardening?</h2>
+            <p>Gardening is great for your mental and physical health. It reduces stress, boosts your mood, and connects you to nature. Additionally, 
+                there's something very fulfilling about watching things that you have grown and taken care of come to life!
+            </p>
+            <figure>
+                <img src="images/why.jpg" alt="Keukenhof Gardens">
+                <figcaption>Keukenhof Botanical Gardens in Lisse, Netherlands.</figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Designed by <a href="https://webpages.charlotte.edu/akeener6/itis3135/milamilaindustries.com/">MilaMila Industries</a> ©2025</p>
+        </div>
+    </footer>
+</body></html>

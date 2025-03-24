@@ -20,8 +20,30 @@ main p {
     margin-right: 20%;
 }
 
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 li {
     text-align: left;
     margin-left: 20%;
     margin-right: 20%;
+}
+
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    main {
+        width: 80%;
+    }
+}
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    main {
+        width: 80%;
+    }
+}
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    main {
+        width: 80%;
+    }
 }

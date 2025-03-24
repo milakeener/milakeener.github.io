@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fefae0;
+            color: #815e48;
+        }
+        nav {
+            background: #ccd5ae;
+            color: #fefae0;
+            padding: 10px;
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+            font-family: Geneva;
+            font-size: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section {
+            padding: 20px;
+            display: none; /* Initially hide all sections */
+        }
+        #home {
+            display: block; /* Show home section by default */
+        }
+    </style>
+    <script>
+        function showSection(id) {
+            document.querySelectorAll("section").forEach(section => section.style.display = "none");
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('about')">About</a>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('when')">Gardening by Season</a>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('where')">Gardening by Region</a>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('how')">Gardening for Beginners</a>
+        <span class="divider">❃</span>
+        <a href="#" onclick="showSection('why')">Why Gardening?</a>
+        <span class="divider">❃</span>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h1 class="header">Welcome to Mila's World of Gardening</h1>
+            <img src="images/home.jpg" alt="Tropical plants in a garden">
+            <p>Hello and welcome!
+                My name is Mila. I'm an amateur gardener living
+                in the woods in the piedmont region of North Carolina.
+                This website is here for me to teach you more about plants,
+                my experience with them, and how you can start your own garden!
+            </p>
+        </section>
+
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hello!
+                My name is Mila. I'm a student at the University of North
+                Carolina at Charlotte, pursuing a Bachelor of Science in Computer
+                Science. While I've always loved technology, gardening was something
+                that quickly grew on me as a way to step away from the screen in my free time.
+                It helps that I grew up on a hay field in North Carolina, and gardening is something
+                that I've done since I was a child.
+            </p>
+        </section>
+
+        <section id="when">
+            <h2>Gardening by Season</h2>
+            <p>Timing is crucial when it comes to gardening. Different plants thrive during different seasons, and some plants are more suitable for certain climates.</p>
+            <p>In the spring, many flowers begin to bloom. Summer is ideal for warm-weather crops like tomatoes and peppers, while fall is perfect for cooler plants like kale and spinach.</p>
+            <figure>
+                <img src="images/spring-garden.jpg" alt="Spring garden">
+                <figcaption>A spring garden with blooming flowers and fresh green plants.</figcaption>
+                <i>Image prompt: "A garden in spring with colorful flowers and green grass."</i>
+            </figure>
+        </section>
+
+        <section id="where">
+            <h2>Gardening by Region</h2>
+            <p>The best places to garden depend on your climate zone and available space. You can grow a beautiful garden in your backyard, on a balcony, or even indoors with the right conditions.</p>
+            <p>Some regions are more suited for specific types of plants—coastal areas, for example, are great for salt-tolerant plants, while cooler mountain regions are better for hardy vegetables.</p>
+            <figure>
+                <img src="images/garden-locations.jpg" alt="Various garden locations">
+                <figcaption>Gardening can be done in many locations, from balconies to backyards.</figcaption>
+                <i>Image prompt: "Various types of gardening spaces, including backyards and balconies."</i>
+            </figure>
+        </section>
+
+        <section id="how">
+            <h2>How to Start Your Garden</h2>
+            <p>Starting a garden is easier than you think! Here’s a simple guide:</p>
+            <ul>
+                <li>Choose a location with plenty of sunlight.</li>
+                <li>Pick plants that are suitable for your climate and soil type.</li>
+                <li>Prepare your soil, and start planting!</li>
+            </ul>
+            <figure>
+                <img src="images/planting.jpg" alt="Planting seeds in the garden">
+                <figcaption>Planting seeds in freshly prepared soil.</figcaption>
+                <i>Image prompt: "A person planting seeds in the garden soil."</i>
+            </figure>
+        </section>
+
+        <section id="why">
+            <h2>Why Gardening?</h2>
+            <p>Gardening offers numerous benefits, including mental and physical health improvements. It helps reduce stress, provides exercise, and enhances your connection to the earth.</p>
+            <p>Gardening can also boost your mood and help you live a more sustainable lifestyle by growing your own food and reducing your carbon footprint.</p>
+            <figure>
+                <img src="images/why-garden.jpg" alt="Happy gardener">
+                <figcaption>Gardening makes me feel happy and connected to nature.</figcaption>
+                <i>Image prompt: "A happy gardener working in a lush garden."</i>
+            </figure>
+        </section>
+
+</body>
+</html>

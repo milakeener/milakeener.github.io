@@ -3,187 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <title>Mila's Digital Horizon</title>
-        <style>
-            @keyframes twinkle {
-                0% {
-                    opacity: 0.5;
-                    transform: scale(1);
-                }
-                50% {
-                    opacity: 1;
-                    transform: scale(1.5);
-                }
-                100% {
-                    opacity: 0.5;
-                    transform: scale(1);
-                }
-            }
-            #stars {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-                overflow: hidden;
-            }
-            .star {
-                position: absolute;
-                background: white;
-                border-radius: 50%;
-                animation: twinkle 5s infinite;
-            }
-            body {
-                height: 300vh;
-                margin: 0;
-                transition: background 0.3s ease;
-            }
-            section {
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-                align-items: center;
-                margin-bottom: 100px;
-            }
-            .inner-1 {
-                background-color: #7B83A0;
-                width: 60%;
-                height: 800px;
-                margin: 0 auto;
-                z-index: -1;
-                position: relative;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: row;
-                box-shadow: 0 20px 30px rgb(76, 76, 76);
-            }
-            .inner-2 {
-                background-color: #B29CB4;
-                width: 60%;
-                height: 800px;
-                margin: 0 auto;
-                z-index: -1;
-                position: relative;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                box-shadow: 0 20px 30px rgb(76, 76, 76);
-            }
-            .inner-3 {
-                background-color: #c3a7c0;
-                width: 60%;
-                height: 800px;
-                margin: 0 auto;
-                z-index: -1;
-                position: relative;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                box-shadow: 0 20px 30px rgb(76, 76, 76);
-            }
-            .inner-4 {
-                background-color: #d9baab;
-                width: 60%;
-                height: 800px;
-                margin: 0 auto;
-                z-index: -1;
-                position: relative;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                box-shadow: 0 20px 30px rgb(76, 76, 76);
-            }
-            .inner-box {
-                background-color: #FAF9F6;
-                width: 80%;
-                height: 600px;
-                margin: auto;
-                position: relative;
-                align-items: center;
-                display: flex;
-                justify-content: space-between;
-                box-shadow: 0 20px 30px rgb(76, 76, 76);
-            }
-            h1 {
-                align-self: flex-start; 
-                margin-left: 25%;
-                font-size: 38px;
-                color: #464545;
-                font-family: Geneva;
-                margin-right: auto;
-            }
-            h2 {
-                color: rgb(194, 194, 255);
-            }
-            .h2-story {
-                color: rgb(231, 156, 189);
-            }
-            .header {
-                display: flex;
-                justify-content: space-between;
-                width: 90%;
-            }
-            .socials{
-                display: flex;
-                margin-right: 25%;
-            }
-            .socials a {
-                gap: 15px;
-                font-size: 38px;
-                color: #464545;
-                margin-right: 50%;
-                text-decoration: none;
-                margin-top: 50%;
-            }
-            .socials a:hover {
-                color: lavender;
-            }
-            .photo {
-                justify-content: left;
-                align-items: left;
-                margin-left: 75px;
-                flex: 1;
-            }
-            .inner-1-text {
-                justify-content: flex-start;
-                align-items: right;
-                margin-right: 75px;
-                flex: 1;
-                padding-left: 30px;
-                font-size: 20px;
-                font-family: Georgia;
-                color: #464545;
-            }
-            input[type=text], input[type=email], select, textarea {
-                width: 100%;
-                padding: 15px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-                margin-top: 6px;
-                margin-bottom: 16px;
-                resize: vertical;
-            }
-            input[type=submit]{
-                color: white;
-                border: none;
-                padding: 12px 20px;
-                cursor: pointer;
-            }
-            input[type=submit]:hover{
-                background-color: lavender;
-            }
-            .section1 {
-                display: flex;
-                background: transparent;}
-            .section2 { background: transparent;}
-            .section3 { background: transparent;}
-            .section4 { background: transparent;}
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div id="stars"></div>
@@ -213,35 +35,37 @@
             </div>
             </section>
             <section id="about" class="section2">
-                <h1>About Me</h1>
-                <div class="inner-2">
-                    <div class="inner-box">
-                        <div class="inner-1-text"><h2 class="h2-story">My Story</h2>
-                        <p>I am deeply passionate about connecting the world.</p>
-                        <p>When I was nineteen, I bought a plane ticket that took me to China.
-                            I had never been on an airplane before. This experience completely
-                            transformed my life and reshaped my perspective on the world. Since then,
-                            I have been dedicated to understanding cultures, building global connections,
-                            and finding ways to foster meaningful impact in the world.</p>
-                        <p>My academic journey reflects this commitment. After studying International
-                            Business, I transitioned into Computer Science, a field that allows me to combine
-                            my interests in technology and global collaboration. I appreciate the power of 
-                            computers to unlock solutions to complex problems.
-                        </p>
-                    <p>Now, I aim to thrive in the intersection of Computer Science, International Business,
-                        and data analysis, where I can leverage data to drive informed decisions and create
-                        connections across borders.
-                    </p>
-                <p>Through my work, I strive to bridge the gap between technology and global business, fostering
-                    innovation for a more connected world.
-                </p></div>
-                    </div></div>
-            </section>
+  <div class="inner-2">
+    <div class="inner-box" style="flex-direction: column; padding: 30px;">
+      <h1 style="text-align: center;">About Me</h1>
+
+      <div class="section-buttons">
+        <button class="section-button active" data-target="inner-1-text-1">1</button>
+        <button class="section-button" data-target="inner-1-text-2">2</button>
+      </div>
+
+      <div class="inner-1-text-1 active">
+        <h2 class="h2-story">My Story</h2>
+        <p>I am deeply passionate about connecting the world.</p>
+        <p>When I was nineteen, I bought a plane ticket that took me to China. I had never been on an airplane before. This experience completely transformed my life and reshaped my perspective on the world. Since then, I have been dedicated to understanding cultures, building global connections, and finding ways to foster meaningful impact in the world.</p>
+        <p>My academic journey reflects this commitment. After studying International Business, I transitioned into Computer Science, a field that allows me to combine my interests in technology and global collaboration. I appreciate the power of computers to unlock solutions to complex problems.</p>
+        <p>Now, I aim to thrive in the intersection of Computer Science, International Business, and data analysis, where I can leverage data to drive informed decisions and create connections across borders.</p>
+        <p>Through my work, I strive to bridge the gap between technology and global business, fostering innovation for a more connected world.</p>
+      </div>
+
+      <div class="inner-1-text-2">
+        <h2>More About Me</h2>
+        <p>This summer, I will be working as a software engineering intern at Ally Financial. I am currently prioritizing learning to work with Amazon Web Services and Terraform!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
             <section id="projects" class="section3">
                 <h1>Projects</h1>
                 <div class="inner-3">
                     <div class="inner-box">
-                        <div class="inner-1-text"><h2>My Work</h2>
+                        <div class="inner-3-text"><h2>My Work</h2>
                         <p>Click here to see my projects on GitHub!</div>
                     </div></div>
             </section>
@@ -265,6 +89,32 @@
                         </div>
             </section>
             <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.section-button');
+      const sections = document.querySelectorAll('.inner-1-text-1, .inner-1-text-2');
+
+     function showSection(targetClass) {
+    sections.forEach(sec => {
+        sec.classList.remove('active');
+    });
+    const targetEl = document.querySelector(`.${targetClass}`);
+    if (targetEl) {
+        targetEl.classList.add('active');
+    }
+}
+
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const target = button.getAttribute('data-target');
+          showSection(target);
+
+          buttons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+        });
+      });
+    });
 
             function stars(){
                 const numStars = 200;

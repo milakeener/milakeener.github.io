@@ -112,6 +112,11 @@ h2 {
     flex: 1;
     max-width: 300px;
 }
+.photo2 img {
+    flex: 1;
+    max-width: 300px;
+    max-height: 500px;
+}
 .photo img {
     width: 100%;
     height: auto;
@@ -145,6 +150,15 @@ h2 {
 }
 .section-button.active {
     background-color: #999;
+}
+.project-section {
+    display: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.project-section.active {
+    display: block;
 }
 
 .inner-1-text-1,
@@ -210,4 +224,26 @@ input[type="submit"]:hover {
     .socials a {
         font-size: 28px;
     }
+}
+.about-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.about-flex-container .photo2 {
+    flex: 1;
+    max-width: 300px;
+}
+
+.about-flex-container .photo2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.about-flex-container .inner-1-text-1,
+.about-flex-container .inner-1-text-2 {
+    flex: 2;
 }

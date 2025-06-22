@@ -44,77 +44,123 @@
         <button class="section-button" data-target="inner-1-text-2">2</button>
       </div>
 
-      <div class="inner-1-text-1 active">
-        <h2 class="h2-story">My Story</h2>
-        <p>I am deeply passionate about connecting the world.</p>
-        <p>When I was nineteen, I bought a plane ticket that took me to China. I had never been on an airplane before. This experience completely transformed my life and reshaped my perspective on the world. Since then, I have been dedicated to understanding cultures, building global connections, and finding ways to foster meaningful impact in the world.</p>
-        <p>My academic journey reflects this commitment. After studying International Business, I transitioned into Computer Science, a field that allows me to combine my interests in technology and global collaboration. I appreciate the power of computers to unlock solutions to complex problems.</p>
-        <p>Now, I aim to thrive in the intersection of Computer Science, International Business, and data analysis, where I can leverage data to drive informed decisions and create connections across borders.</p>
-        <p>Through my work, I strive to bridge the gap between technology and global business, fostering innovation for a more connected world.</p>
-      </div>
+      <div class="about-flex-container">
+        <div class="photo2">
+          <img src="me.jpg" alt="Photo of Mila">
+        </div>
 
-      <div class="inner-1-text-2">
-        <h2>More About Me</h2>
-        <p>This summer, I will be working as a software engineering intern at Ally Financial. I am currently prioritizing learning to work with Amazon Web Services and Terraform!</p>
+        <div class="inner-1-text-1 active">
+          <h2 class="h2-story">My Story</h2>
+          <p>I am deeply passionate about connecting the world.</p>
+          <p>When I was nineteen, I bought a plane ticket that took me to China. 
+            I had never been on an airplane before. This experience completely 
+            transformed my life and reshaped my perspective on the world. Since then,
+             I have been dedicated to understanding cultures, building global connections, 
+             and finding ways to foster meaningful impact in the world.</p>
+             <p>My academic journey reflects this commitment. After studying International Business, 
+                I transitioned into Computer Science, a field that allows me to combine my interests 
+                in technology and global collaboration. I appreciate the power of computers to unlock 
+                solutions to complex problems.</p>
+                <p>Now, I aim to thrive in the intersection of Computer Science, International Business, 
+                    and data analysis, where I can leverage data to drive informed decisions and create 
+                    connections across borders.</p>
+                    <p>Through my work, I strive to bridge the gap between technology and global business, 
+                        fostering innovation for a more connected world.</p>
+        </div>
+
+        <div class="inner-1-text-2">
+          <h2 class="h2-story">More About Me</h2>
+          <p>I currently work as a Software Engineering Intern at Ally Invest. My tasks include
+            working with AWS, Terraform, SQL, and Apache Airflow. I also work extensively with 
+            Python. 
+          </p>
+          <p>During the school year, I work as an Instructional Assistant in Software Architecture
+            and Design, where I help to support students in their educational journey. I greatly 
+            enjoy the experience and the opportunity to not only help others but also contribute to 
+            the structure of the class and encourage meaningful learning.
+          </p>
+          <p>My goal upon graduation is to begin working as a software engineer where I can provide
+            the best possible contributions to my organization.
+          </p>
+          <p>I love what I do, and am eager for the opportunity to do it and do it well!</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
             <section id="projects" class="section3">
-                <h1>Projects</h1>
-                <div class="inner-3">
-                    <div class="inner-box">
-                        <div class="inner-3-text"><h2>My Work</h2>
-                        <p>Click here to see my projects on GitHub!</div>
-                    </div></div>
-            </section>
+  <div class="inner-3">
+    <div class="inner-box" style="flex-direction: column; padding: 30px;">
+      <h1 style="text-align: center;">Projects</h1>
+
+      <div class="section-buttons">
+        <button class="section-button project-button active" data-target="project-1">1</button>
+        <button class="section-button project-button" data-target="project-2">2</button>
+        <button class="section-button project-button" data-target="project-3">3</button>
+      </div>
+
+      <div class="project-section project-1 active">
+        <h2>Project One: Cultural Itinerary Generator</h2>
+        <p>A Python-based command-line application that recommends destinations based on user-selected cultural interests. Uses YAML data and randomized selections.</p>
+        <a href="https://github.com/milakeener/cultural-itinerary-generator" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-section project-2">
+        <h2>Project Two: Mila's Digital Horizon</h2>
+        <p>This website! A responsive, animated portfolio site with starry backgrounds, scroll effects, and dynamic content sections, made with HTML, CSS, and JavaScript.</p>
+        <a href="https://milakeener.com" target="_blank">Visit Site</a>
+      </div>
+
+      <div class="project-section project-3">
+        <h2>Project Three: Java Coffee Shop Simulation</h2>
+        <p>A Java console application that simulates a coffee shop ordering system, with user accounts, order history, and rewards system logic implemented using OOP.</p>
+        <a href="https://github.com/milakeener/java-coffee-shop" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
             <section id="contact" class="section4">
                 <h1>Contact Me</h1>
                 <div class="inner-4">
                     <div class="inner-box">
-                        <form action="action_page.php">
-                            <label for="name">Name: </label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name">
-
-                            <label for="email">Email: </label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email">
-
-                            <label for="subject">Subject: </label>
-                            <textarea id="subject" name="subject" placeholder="Enter your message" style="height: 200px"></textarea>
-
-                            <input type="submit" value="submit">
-                        </form>
+                       
                         </div>
                         </div>
             </section>
             <script>
 
 document.addEventListener('DOMContentLoaded', () => {
-      const buttons = document.querySelectorAll('.section-button');
-      const sections = document.querySelectorAll('.inner-1-text-1, .inner-1-text-2');
+  const aboutButtons = document.querySelectorAll('.section-button:not(.project-button)');
+  const aboutSections = document.querySelectorAll('.inner-1-text-1, .inner-1-text-2');
 
-     function showSection(targetClass) {
-    sections.forEach(sec => {
-        sec.classList.remove('active');
+  aboutButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.getAttribute('data-target');
+
+      aboutSections.forEach(sec => sec.classList.remove('active'));
+      document.querySelector(`.${target}`).classList.add('active');
+
+      aboutButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
     });
-    const targetEl = document.querySelector(`.${targetClass}`);
-    if (targetEl) {
-        targetEl.classList.add('active');
-    }
-}
+  });
 
+  const projectButtons = document.querySelectorAll('.project-button');
+  const projectSections = document.querySelectorAll('.project-section');
 
-      buttons.forEach(button => {
-        button.addEventListener('click', () => {
-          const target = button.getAttribute('data-target');
-          showSection(target);
+  projectButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.getAttribute('data-target');
 
-          buttons.forEach(btn => btn.classList.remove('active'));
-          button.classList.add('active');
-        });
-      });
+      projectSections.forEach(sec => sec.classList.remove('active'));
+      document.querySelector(`.${target}`).classList.add('active');
+
+      projectButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
     });
+  });
+});
 
             function stars(){
                 const numStars = 200;
@@ -171,6 +217,8 @@ document.addEventListener('DOMContentLoaded', () => {
             window.addEventListener("scroll", updateBackground);
 
         updateBackground(); 
+
+
             </script>
         </main>
     </body>

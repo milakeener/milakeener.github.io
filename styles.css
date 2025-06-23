@@ -95,7 +95,14 @@ h2 {
 .inner-1 { background-color: #7B83A0; }
 .inner-3 { background-color: #c3a7c0; }
 .inner-4 { background-color: #d9baab; }
-
+.link {
+    text-decoration: none;
+    align-items: center;
+    color: #a18dd3;
+}
+.project-section project-1 {
+    align-items: center;
+}
 .inner-box {
     background-color: #FAF9F6;
     padding: 40px;
@@ -124,7 +131,8 @@ h2 {
 }
 .inner-1-text,
 .inner-1-text-1,
-.inner-1-text-2 {
+.inner-1-text-2,
+.inner-1-text-3 {
     flex: 2;
     padding: 10px 20px;
     font-size: 20px;
@@ -162,11 +170,13 @@ h2 {
 }
 
 .inner-1-text-1,
-.inner-1-text-2 {
+.inner-1-text-2,
+.inner-1-text-3 {
     display: none;
 }
 .inner-1-text-1.active,
-.inner-1-text-2.active {
+.inner-1-text-2.active,
+.inner-1-text-3.active {
     display: block;
 }
 
@@ -212,7 +222,8 @@ input[type="submit"]:hover {
     .photo,
     .inner-1-text,
     .inner-1-text-1,
-    .inner-1-text-2 {
+    .inner-1-text-2,
+    .inner-1-text-3 {
         width: 100%;
         padding: 10px;
         text-align: center;
@@ -244,6 +255,7 @@ input[type="submit"]:hover {
 }
 
 .about-flex-container .inner-1-text-1,
-.about-flex-container .inner-1-text-2 {
+.about-flex-container .inner-1-text-2,
+.about-flex-container .inner-1-text-3 {
     flex: 2;
 }

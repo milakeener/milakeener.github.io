@@ -42,11 +42,12 @@
       <div class="section-buttons">
         <button class="section-button active" data-target="inner-1-text-1">1</button>
         <button class="section-button" data-target="inner-1-text-2">2</button>
+        <button class="section-button" data-target="inner-1-text-3">3</button>
       </div>
 
       <div class="about-flex-container">
         <div class="photo2">
-          <img src="me.jpg" alt="Photo of Mila">
+          <img src="me.jpg">
         </div>
 
         <div class="inner-1-text-1 active">
@@ -61,8 +62,8 @@
                 I transitioned into Computer Science, a field that allows me to combine my interests 
                 in technology and global collaboration. I appreciate the power of computers to unlock 
                 solutions to complex problems.</p>
-                <p>Now, I aim to thrive in the intersection of Computer Science, International Business, 
-                    and data analysis, where I can leverage data to drive informed decisions and create 
+                <p>Now, I aim to thrive in the intersection of Computer Science and international business 
+                    where I can leverage data to drive informed decisions and create 
                     connections across borders.</p>
                     <p>Through my work, I strive to bridge the gap between technology and global business, 
                         fostering innovation for a more connected world.</p>
@@ -79,8 +80,15 @@
             enjoy the experience and the opportunity to not only help others but also contribute to 
             the structure of the class and encourage meaningful learning.
           </p>
+          <p>Additionally, in my free time, I enjoy volunteering in ways that help support my community.
+            I enjoy working with organizations such as Rotary International and the Japan Cultural
+            Association of the Carolinas. I also study Japanese and French, play video games, garden, 
+            and enjoy trying new types of coffee beans in my espresso maker. Most importantly, I travel
+            on self-orchestrated trips where I can practice my language skills, engage with the world 
+            around me, and follow my dreams of visiting as many UNESCO World Heritage sights as I can. 
+          </p>
           <p>My goal upon graduation is to begin working as a software engineer where I can provide
-            the best possible contributions to my organization.
+            my best work to my organization, engage with my community, and tirelessly innovate.
           </p>
           <p>I love what I do, and am eager for the opportunity to do it and do it well!</p>
         </div>
@@ -102,20 +110,22 @@
 
       <div class="project-section project-1 active">
         <h2>Project One: Cultural Itinerary Generator</h2>
-        <p>A Python-based command-line application that recommends destinations based on user-selected cultural interests. Uses YAML data and randomized selections.</p>
-        <a href="https://github.com/milakeener/cultural-itinerary-generator" target="_blank">View on GitHub</a>
+        <p>A Python-based command-line application that recommends destinations based on user-selected cultural interests. Uses YAML data and randomized selections, and features
+            many locations that have been my own personal favorites to visit including Tokyo, Paris, and Rome.
+        </p>
+        <a href="https://github.com/milakeener/cultural-itinerary-generator" class="link" target="_blank">View on GitHub</a>
       </div>
 
       <div class="project-section project-2">
         <h2>Project Two: Mila's Digital Horizon</h2>
-        <p>This website! A responsive, animated portfolio site with starry backgrounds, scroll effects, and dynamic content sections, made with HTML, CSS, and JavaScript.</p>
-        <a href="https://milakeener.com" target="_blank">Visit Site</a>
+        <p>This website! A responsive, animated personal site with starry backgrounds, scroll effects, and dynamic content sections, made with HTML, CSS, and JavaScript.</p>
+        <a href="https://milakeener.com" class="link" target="_blank">Visit Site</a>
       </div>
 
       <div class="project-section project-3">
         <h2>Project Three: Java Coffee Shop Simulation</h2>
         <p>A Java console application that simulates a coffee shop ordering system, with user accounts, order history, and rewards system logic implemented using OOP.</p>
-        <a href="https://github.com/milakeener/java-coffee-shop" target="_blank">View on GitHub</a>
+        <a href="https://github.com/milakeener/java-coffee-shop" class="link" target="_blank">View on GitHub</a>
       </div>
     </div>
   </div>
@@ -124,7 +134,9 @@
                 <h1>Contact Me</h1>
                 <div class="inner-4">
                     <div class="inner-box">
-                       
+                        <p>Please feel free to connect with me on LinkedIn or send me an email!</p>
+                        <div></div>
+                        <p><img src="email.jpg"></p>
                         </div>
                         </div>
             </section>
@@ -132,7 +144,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const aboutButtons = document.querySelectorAll('.section-button:not(.project-button)');
-  const aboutSections = document.querySelectorAll('.inner-1-text-1, .inner-1-text-2');
+  const aboutSections = document.querySelectorAll('.inner-1-text-1, .inner-1-text-2, .inner-1-text-3');
 
   aboutButtons.forEach(button => {
     button.addEventListener('click', () => {
